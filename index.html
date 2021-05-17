@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav><h1>Kalkulator</h1>
+    <ul>
+        <a href="">Pola figur</a>
+        <a href="obowody.html">Obwody figur</a>
+        
+    </ul>
+    </nav>
+
+    <div class="calc">
+        
+        <form name="formss" action="">
+    <div class="upper">
+            <h2>POLA FIGUR</h2>
+            Podaj bok a: <input type="text" name="boka">
+            Podaj bok b: <input type="text" name="bokb">
+            Podaj wysokość: <input type="text" name="wysokosc"><br><br>
+        
+        <button type="button" class="btn" onclick="pola(this.form)">Oblicz pola</button>
+        <br><br><br>
+    </div>
+
+    <div class="poola">
+        Pole kwadratu: <input class="obw" type="text" name="kwadrat" disabled>
+        Pole prostokąta: <input class="obw" type="text" name="prostokat" disabled>
+        Pole trojkąta: <input class="obw" type="text" name="trojkat" disabled>
+        <br><br>
+        Pole równoległoboku: <input class="obw" type="text" name="rownoleglobok" disabled>
+        Pole rombu: <input class="obw" type="text" name="romb" disabled>
+        Pole trapeza: <input class="obw" type="text" name="trapez" disabled>
+    </div>    
+        </form>
+        
+        
+        <script type="text/javascript">
+            function pola(forms){
+                if(forms.boka.value=="" || forms.bokb.value=="" || forms.wysokosc.value=="")
+                alert("wprowadz dane")
+                else
+            {
+                let boka=parseFloat(forms.boka.value)
+                let bokb=parseFloat(forms.bokb.value)
+                let wysokosc=parseFloat(forms.wysokosc.value);
+                
+                forms.kwadrat.value=boka*boka
+                forms.prostokat.value=boka*bokb
+                forms.trojkat.value=boka*wysokosc/2;
+                forms.rownoleglobok.value=boka*wysokosc
+                forms.romb.value=boka*wysokosc
+                forms.trapez.value=(boka+bokb)*wysokosc/2
+            }
+            }
+            
+            
+            
+            
+            </script>
+            
+    </div>
+
+</body>
+</html>

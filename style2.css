@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(wp7115408.jpg);
+    background-position-x: center;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    
+}
+
+nav{
+    width: auto;
+    height: 100px;
+    background-color: #202124;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-family: 'Lobster Two', cursive, sans-serif;
+    font-size: 35px;
+}
+
+ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    padding: 14px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-bottom: 3px solid transparent;
+    
+}
+a:hover{
+    border-bottom: 3px solid white;
+}
+
+a:active{
+    border-bottom: 3px solid white;
+}
+
+
+.calc{
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    background: none;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #d51c1b;
+    
+    cursor: pointer;
+    color: #d51c1b;
+    font-size: 15px;
+    transition: 0.8s;
+}
+button:hover{
+transition: 0.8s ;
+background-color: #d51c1b;
+color: white;
+}
+
+h2{
+    font-family: 'Permanent Marker', cursive;
+    color: #d51c1b;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 5px;
+    color: #d51c1b;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+}
+
+.obw{
+    color: #1b397c;
+}
+

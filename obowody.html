@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obowdy</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav><h1>Kalkulator</h1>
+        <ul>
+            <a href="index.html">Pola figur</a>
+            <a href="obowody.html">Obwody figur</a>
+            
+        </ul>
+        </nav>
+    
+        <div class="calc">
+            
+            <form name="forms" >
+                <h2>OBWODY FIGUR</h2>
+                Podaj bok a: <input type="text" name="boka">
+                Podaj bok b: <input type="text" name="bokb">
+                Podaj bok c: <input type="text" name="bokc"><br><br>
+            <button type="button" class="btn" onclick="obowdy(this.form)">Oblicz obwody</button>
+            <br><br><br>
+            Obwód kwadratu: <input class="obw" type="text" name="kwadrat" disabled><br><br>
+            Obwód prostokąta: <input class="obw" type="text" name="prostokat" disabled><br><br>
+            Obwód równoległoboku: <input class="obw" type="text" name="rownoleglobok" disabled><br><br>
+            Obwód trojkąta: <input class="obw" type="text" name="trojkat" disabled><br><br>
+            
+            
+            
+            
+            
+            </form>
+            
+            
+            <script type="text/javascript">
+                function obowdy(forms){
+                    if(forms.boka.value=="" || forms.bokb.value=="" || forms.bokc=="")
+                    {
+                        alert("wprowadz dane")
+                    }
+                    else
+                    {
+                        boka=parseFloat(forms.boka.value)
+                        bokb=parseFloat(forms.bokb.value)
+                        bokc=parseFloat(forms.bokc.value)
+                        forms.kwadrat.value=boka*4
+                        forms.prostokat.value=boka*2+bokb*2
+                        forms.trojkat.value=boka+bokb+bokc
+                        forms.rownoleglobok.value=2*boka+2*bokb
+                    }
+                }
+                
+                
+                
+                
+                </script>
+                
+        </div>
+</body>
+</html>
